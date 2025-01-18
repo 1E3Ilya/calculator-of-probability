@@ -54,7 +54,7 @@
     function validateForm() {
         const n = Number(document.getElementById('n').value);
         const k = Number(document.getElementById('k').value);
-        if ((isNaN(n) || isNaN(k) || (n < 1 || k < 1) || (n < k))) {
+        if ((isNaN(n) || isNaN(k) || (n < 1 || k < 1))) {
             const answerContainer = document.querySelector('.answer');
             if (answerContainer) {
                 answerContainer.innerHTML = '';
